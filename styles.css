@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root{
+    --darkSkyBlue: #00c1b5;
+    --orange: #ff651a;
+    --yellow: #ffbe00;
+    --blue: #1d3fbb;
+    --red: #e30512;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 1rem;
+    transition: background-color 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+main{
+    display: grid;
+    place-items: center;
+}
+main section{
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+main section div:not(.poster){
+    margin-bottom: 1.5rem;
+}
+main section:not(.first-sec) a{
+    color: #fff;
+}
+
+.logo img{
+    width: 55vw;
+    max-width: 260px;
+}
+.poster img{
+    width: 80vw;
+    max-width: 400px;
+}
+@media screen and (max-width: 500px) {
+    main{
+        margin-top: 10vw;
+    }
+}
+main div a{
+    text-decoration: none;
+    color: #E568AC;
+}
+a:hover{
+    border-bottom: 1px solid currentColor;
+}
+
+/* ----------------- footer ------------------ */
+footer{
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+    text-align: center;
+}
+footer {
+    font-family: 'Roboto';
+}
+.privPol{
+    font-family: initial;
+    text-align: center;
+    font-size: .85rem;
+    margin-top: .5rem;
+}
+footer section, footer div{
+    margin-bottom: 1rem;
+}
+.contact{
+    margin-top: 2rem;
+}
+footer a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media screen and (min-width: 750px) {
+    footer{
+        display: block;
+        text-align: left;
+    }
+    footer section{
+        width: 25vw;
+        max-width: 250px;
+    }
+    .privPol{
+        text-align: left;
+    }
+    .contact{
+        text-align: end;
+    }
+}
